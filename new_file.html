@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		#id{
+			width: 400px;
+			height: 400px;
+			background-color: beige;
+			display: flex;
+			/*flex-direction: column;//主轴垂直方向，起点在上边沿；*/
+			/*flex-direction: column-reverse;//主轴垂直方向，起点在下边沿*/
+			flex-direction: row;/*水平，起点在左边沿*/
+			/*flex-direction: row-reverse;//水平,右*/
+			flex-wrap: nowrap; /*| wrap | wrap-reverse是否换行*/
+			/*justify-content: center;*//*水平居中*/
+			/*justify-content: flex-end;*/
+			justify-content: flex-start;
+			/*justify-content: space-around;*/
+			justify-content: space-between;/*两端对齐，项目之间间隔相等；*/
+			align-items: center;
+			align-content: flex-end;
+		}
+		.a{
+			width: 100px;
+			height: 100px;
+			background-color: #9FCB40;
+		}
+		.b{
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+		}
+		.c{
+			width: 100px;
+			height: 100px;
+			background-color: chocolate;
+		}
+	</style>
+	<body>
+		
+		<div id="id">
+			<div class="a">
+			1
+		</div>
+		<div class="b">
+			2
+		</div>
+		<div class="c">
+			3
+		</div>
+		</div>
+	</body>
+</html>
