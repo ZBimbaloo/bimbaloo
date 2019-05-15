@@ -1,0 +1,44 @@
+#music {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    z-index: 99;
+}
+
+#music img {
+    -webkit-animation: rotateImg 2s linear infinite;
+    width: 100px;
+}
+
+@keyframes rotateImg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotateImg {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#page_1_01 {
+    color: yellow;
+    font-size: 100px;
+    margin-bottom: 300px;
+}
+
+#page_1_02 {
+    text-align: left;
+    padding: 100px;
+}
+
+.s1 {
+    background: red;
+}
