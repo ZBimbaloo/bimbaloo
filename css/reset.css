@@ -1,0 +1,22 @@
+body{margin:0;line-height:1;font-family: 'Microsoft Yahei';}
+h1,h2,h3,h4,h5,h6{margin:0;font-weight:normal;}
+p,dl,dd{margin:0;}
+ul,ol{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;color:#333;}
+em,i{font-style:normal;}
+strong,b{font-weight: normal;}
+img{vertical-align: bottom;border: none;}
+table{ border-collapse: collapse;}
+th,td{padding:0;}
+th{font-weight:normal;}
+td{vertical-align: top;}
+input{margin:0;padding:0;outline:none;
+    /*清除表单元素获取焦点时的轮廓线*/
+    /*border:none;*/}
+input, textarea, select, button { font-family: inherit; font-size:inherit;}
+textarea{resize:none; overflow:auto;}
+.clearfix{*zoom:1;}
+.clearfix:after{content:"";display:block;clear:both;font-size: 0;height: 0;line-height:0;overflow: hidden}
+
+
+
