@@ -1,13 +1,13 @@
 #music {
-    position: absolute;
-    right: 100px;
-    top: 100px;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
     z-index: 99;
 }
 
 #music img {
     -webkit-animation: rotateImg 2s linear infinite;
-    width: 100px;
+    width: 1rem;
 }
 
 @keyframes rotateImg {
@@ -28,17 +28,176 @@
     }
 }
 
-#page_1_01 {
-    color: yellow;
-    font-size: 100px;
-    margin-bottom: 300px;
-}
-
-#page_1_02 {
-    text-align: left;
-    padding: 100px;
-}
-
 .s1 {
-    background: red;
+    background: url(../images/bgimg.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+#si_top_01 {
+    width: 5rem;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+#s1_center {
+    width: 7rem;
+    margin-top: 1rem;
+    margin-left: -20rem;
+}
+
+#s1_center img {
+    width: 3rem;
+    display: inline;
+}
+
+#s1_down {
+    margin-top: 1rem;
+}
+
+#s1_down .pic1 {
+    margin-left: -10rem;
+}
+
+#s1_down .pic2 {
+    margin-left: -20rem;
+}
+
+#s1_down .pic3 {
+    margin-left: -20rem;
+}
+
+#s1_down img {
+    width: 2rem;
+}
+
+#s1_bottom img {
+    width: 0rem;
+    margin-top: 1rem;
+}
+
+
+/*zrc*/
+
+.zrc {
+    background-image: url(../images/zrcbgimg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.index_1 {
+    font-family: Arial, "Microsoft YaHei";
+    text-align: center;
+}
+
+.content_1 {
+    margin: 0 auto;
+}
+
+.content_1 img {
+    display: inline;
+    width: 0rem;
+}
+
+.content_1_2 {
+    margin-left: .3rem;
+}
+
+.content_2,
+.content_4 {
+    margin-top: 0;
+    margin-left: -20rem;
+}
+
+.content_3 {
+    margin-top: 0;
+    margin-right: -20rem;
+}
+
+.content_2 img,
+.content_3 img,
+.content_4 img {
+    width: 5rem;
+}
+
+.content_5 {
+    margin-top: .8rem;
+    margin-left: .2rem;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.content_5 img {
+    width: 8rem;
+}
+
+.content_6 {
+    margin: -1.8rem auto 0 auto;
+}
+
+#content_6_1 {
+    width: 0rem;
+    display: inline;
+}
+
+#content_6_2 {
+    display: inline;
+    width: 0rem;
+    margin-left: 0.5rem;
+}
+
+
+/*礼品*/
+
+.s5 {
+    background-image: url(../images/xhnbgimg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.s5 img {
+    display: block;
+}
+
+.s5_1 {
+    width: 2rem;
+    margin-top: .5rem;
+    margin-left: -2rem;
+}
+
+.s5_2 {
+    width: 6rem;
+    margin: .2rem auto auto auto;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.s5_3 {
+    width: 6rem;
+    margin: 0.2rem auto auto auto;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.s5_4 {
+    width: 6rem;
+    margin: 0.2rem auto auto auto;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.s5_5 {
+    width: 2rem;
+    margin-top: .3rem;
+    margin-left: -2rem;
+}
+
+.s5_6 {
+    width: 0rem;
+    margin: 0.2rem auto auto auto;
+}
+
+.s5_7 {
+    width: 0rem;
+    margin: 0.8rem auto auto auto;
 }

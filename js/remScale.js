@@ -9,7 +9,6 @@
 			    if (!clientWidth) return;
                 if(clientWidth>=720){ //设计稿宽度
                      docEl.style.fontSize = '100px';
-                     
                 }else{								
                     docEl.style.fontSize = 100 * (clientWidth /720) + 'px';
                 }
