@@ -23,7 +23,7 @@
 
 <body>
     <div id="music" onclick="audioPlay()">
-        <audio src="./song.ogg" controls="controls" id="bgaudio" autoplay loop hidden></audio>
+        <audio src="./song.ogg" controls="controls" id="bgaudio" autoplay="autoplay" loop hidden></audio>
         <img src="./images/play.jpg" alt="yinyue" id="audioImg">
     </div>
     <div id="dowebok">
@@ -92,6 +92,7 @@
     </div>
 
     <script>
+    	document.querySelector("#bgaudio").play();
         //  背景音乐播放与控制		
         function audioPlay() {
             var myAudio = document.querySelector("#bgaudio");
@@ -190,7 +191,7 @@
                 // autoScrolling: false,
 
                 afterRender: function() {
-                    audioPlay();
+                    document.querySelector("#bgaudio").play();
                 },
                 afterLoad: function(anchorLink, index) {
                     if (index == 1) {
