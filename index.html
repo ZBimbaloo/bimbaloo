@@ -31,7 +31,9 @@
   	type:"get",
   	url:"https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx741b5058a315211c&secret=af69be916dda138852bae45c4c618176&code="+code+"&grant_type=authorization_code",
   	async:true,
-  	dataType: "json",
+  	dataType: "jsonp",
+  	jsonp:"callback",
+  	jsonpCallback："successCallback",
   	success:function(data){
   		  		console.log(data);
   	}
