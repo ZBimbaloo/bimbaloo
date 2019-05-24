@@ -31,7 +31,8 @@
   	type:"get",
   	url:"https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx741b5058a315211c&secret=af69be916dda138852bae45c4c618176&code="+code+"&grant_type=authorization_code",
   	async:true,
-  	dataType: "script", 
+  	dataType: "script",
+  	cache: !1,
   	success:function(data){
   		 var g = window.wx_errcode;//这里为什么是window.wx_errcode呢 因为返回的格式是script 内容是 window.wx_errcode=408;window.wx_code='';
   		console.log(g);
