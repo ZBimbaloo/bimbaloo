@@ -33,7 +33,8 @@
   	async:true,
   	dataType: "script", 
   	success:function(data){
-  		console.log(data.data);
+  		 var g = window.wx_errcode;//这里为什么是window.wx_errcode呢 因为返回的格式是script 内容是 window.wx_errcode=408;window.wx_code='';
+  		console.log(g);
   	}
   });
 </script>
