@@ -32,51 +32,10 @@
   	url:"https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx741b5058a315211c&secret=af69be916dda138852bae45c4c618176&code="+code+"&grant_type=authorization_code",
   	async:true,
   	dataType: "script",
-  	            cache: !1,
-            timeout: 6e4,
-            success: function(d, e, f) {
-                var g = window.wx_errcode;//这里为什么是window.wx_errcode呢 因为返回的格式是script 内容是 window.wx_errcode=408;window.wx_code='';
-                switch (g) {
-                case 405://如果是405证明用户已经同意授权登录 用js重定向并带上code
-                    var h = "http://www.jianshu.com/users/auth/wechat/callback";
-                    h = h.replace(/&amp;/g, "&"),
-                    h += (h.indexOf("?") > -1 ? "&": "?") + "code=" + wx_code + "&state=123";
-                    var i = b("self_redirect");
-                    if (c) if ("true" !== i && "false" !== i) try {
-                        document.domain = "qq.com";
-                        var j = window.top.location.host.toLowerCase();
-                        j && (window.location = h)
-                    } catch(k) {
-                        window.top.location = h
-                    } else if ("true" === i) try {
-                        window.location = h
-                    } catch(k) {
-                        window.top.location = h
-                    } else window.top.location = h;
-                    else window.location = h;
-                    break;
-                case 404:
-                    jQuery(".js_status").hide(),
-                    jQuery("#wx_after_scan").show(),
-                    setTimeout(a, 100, g);
-                    break;
-                case 403:
-                    jQuery(".js_status").hide(),
-                    jQuery("#wx_after_cancel").show(),
-                    setTimeout(a, 2e3, g);
-                    break;
-                case 402:
-                case 500:
-                    window.location.reload();
-                    break;
-                case 408:
-                    setTimeout(a, 2e3)
-                }
-            },
-            error: function(b, c, d) {
-                var e = window.wx_errcode;
-                408 == e ? setTimeout(a, 5e3) : setTimeout(a, 5e3, e)
-            }
+    success:function(data){
+    	console.log(111111111111);
+    	
+    }
   });
 </script>
 </body>
