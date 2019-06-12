@@ -62,7 +62,7 @@
                 //第一步，没有拿到code，跳转至微信授权页面获取code
                 redirectUri = GWC.appendParams('https://open.weixin.qq.com/connect/oauth2/authorize#wechat_redirect', {
                     'appid': appid,
-                    'redirect_uri': encodeURIComponent("http://"+window.location.host+"/notify.html"),
+                    'redirect_uri': encodeURIComponent("http://"+window.location.host+"/bimbaloo/notify.html"),
                     'response_type': 'code',
                     'scope': 'snsapi_userinfo',
                     'state': 'STATE',
