@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>wx_login</title>
     <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+    s
 </head>
 
 <body>
@@ -29,9 +30,9 @@
   console.log(code) ;
   $.ajax({
   	type:"get",
-  	url:"https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx741b5058a315211c&secret=af69be916dda138852bae45c4c618176&code="+code+"&grant_type=authorization_code",
+  	url:"http://localhost:8084/yoshop-master/web/index.php?s=/api/index/sessionKey",
   	async:true,
-  	dataType: "script",
+  	dataType: "get",
     success:function(data){
     	console.log(111111111111);
     	console.log(data);
