@@ -1,17 +1,1 @@
-//获取后缀名方法
-exports.getmime=function(extName){
-	switch(extName){
-		case '.html':
-		    return 'text/html';
-		
-		case '.css':
-		    return 'text/css';
-		
-		case '.js':
-		     return 'text/javascript';
-		
-		default:
-		   return 'text/html';
-		
-	}
-}
+意外错误。未能在撤销／重做时从本地历史记录复原文件内容。

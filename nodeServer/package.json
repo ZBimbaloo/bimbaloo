@@ -1,17 +1,1 @@
-{
-  "name": "nodeServer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ejs": "^2.6.2",
-    "md5-node": "^1.0.1"
-  }
-}
+意外错误。未能在撤销／重做时从本地历史记录复原文件内容。
