@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://www.jq22.com/demo/tuupola-jquery_lazyload/jquery.lazyload.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<img class="lazy" width="500" height="400" data-original="./images/1.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/2.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/3.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/4.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/5.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/6.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/7.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/8.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/9.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/10.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/11.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/12.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/13.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/14.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/15.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/16.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/17.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/18.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/19.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/20.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/21.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/22.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/23.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/24.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/25.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/26.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/27.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/28.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/29.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/30.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/31.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/32.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/33.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/34.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/35.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/36.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/37.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/38.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/39.jpg"><br />
+			<img class="lazy" width="500" height="400" data-original="./images/40.jpg"><br />
+		</div>
+
+	</body>
+	<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$("img.lazy").lazyload({
+				//placeholder: "./images/blank.png", //用图片提前占位
+				// placeholder,值为某一图片路径.此图片用来占据将要加载的图片的位置,待图片加载时,占位图则会隐藏
+				effect: "fadeIn", // 载入使用何种效果
+				// effect(特效),值有show(直接显示),fadeIn(淡入),slideDown(下拉)等,常用fadeIn
+				//threshold: 200, // 提前开始加载
+				// threshold,值为数字,代表页面高度.如设置为200,表示滚动条在离目标位置还有200的高度时就开始加载图片,可以做到不让用户察觉
+				//event: 'click', // 事件触发时才加载
+				// event,值有click(点击),mouseover(鼠标划过),sporty(运动的),foobar(…).可以实现鼠标莫过或点击图片才开始加载,后两个值未测试…
+				//container: $("#container"), // 对某容器中的图片实现效果
+				// container,值为某容器.lazyload默认在拉动浏览器滚动条时生效,这个参数可以让你在拉动某DIV的滚动条时依次加载其中的图片
+				//failurelimit: 10 // 图片排序混乱时
+				// failurelimit,值为数字.lazyload默认在找到第一张不在可见区域里的图片时则不再继续加载,但当HTML容器混乱的时候可能出现可见区域内图片并没加载出来的情况,failurelimit意在加载N张可见区域外的图片,以避免出现这个问题.
+			});
+		});
+	</script>
+
+</html>
