@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<script src="js/chart.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div style="width: 400px;height: 400px;">
+			<canvas id="myChart"></canvas>
+		</div>
+		<div style="width: 400px;height: 400px;">
+			<canvas id="myChart1"></canvas>
+		</div>
+		<div style="width: 400px;height: 400px;">
+			<canvas id="myChart2"></canvas>
+		</div>
+		<div style="width: 400px;height: 400px;">
+			<canvas id="myChart3"></canvas>
+		</div>
+		<div style="width: 400px;height: 400px;">
+			<canvas id="myChart4"></canvas>
+		</div>
+		<div style="width: 400px;height: 400px;">
+			<canvas id="myChart5"></canvas>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var data = {
+			labels: ["January", "February", "March", "April", "May", "June", "July"],
+			datasets: [{
+					// 当前图表数据的标题内容
+					label: "My First dataset",
+					// 是否填充折线与水平轴中间的区域
+					fill: true,
+					// 设置折线数据点的贝塞尔曲线值（值为0时为折线）
+					lineTension: 0.1,
+					// 设置背景颜色
+					backgroundColor: "rgba(75,192,192,0.4)",
+					// 设置边框颜色
+					borderColor: "rgba(75,192,192,1)",
+					// 设置折线端点的样式
+					borderCapStyle: 'butt',
+					// 破折号的长度和间距
+					borderDash: [],
+					// 破折号的偏移量
+					borderDashOffset: 0.0,
+					// 设置折线交点的样式
+					borderJoinStyle: 'miter',
+					// 设置折线数据点的边框颜色
+					pointBorderColor: "rgba(75,192,192,1)",
+					// 设置折线数据点的背景颜色
+					pointBackgroundColor: "#fff",
+					// 设置折线数据点的边框宽度
+					pointBorderWidth: 1,
+					// 设置当鼠标悬停折线数据点时的半径
+					pointHoverRadius: 5,
+					// 设置当鼠标悬停折线数据点时的背景颜色
+					pointHoverBackgroundColor: "rgba(75,192,192,1)",
+					// 设置当鼠标悬停折线数据点时的边框颜色
+					pointHoverBorderColor: "rgba(220,220,220,1)",
+					// 设置当鼠标悬停折线数据点时的边框宽度
+					pointHoverBorderWidth: 2,
+					// 设置折线数据点的半径
+					pointRadius: 1,
+					//
+					pointHitRadius: 10,
+					// 设置折线中所有的数据
+					data: [65, 59, 80, 81, 56, 55, 40],
+					// 如果设置为true，将在没有数据或空数据的点之间绘制直线
+
+				},
+				{
+					label: "My Second dataset",
+					// 是否填充折线与水平轴中间的区域
+					fill: true,
+					// 设置折线数据点的贝塞尔曲线值（值为0时为折线）
+					lineTension: 0.1,
+					// 设置背景颜色
+					backgroundColor: "rgba(175,192,192,0.4)",
+					// 设置边框颜色
+					borderColor: "rgba(175,192,192,1)",
+					// 设置折线端点的样式
+					borderCapStyle: 'butt',
+					// 破折号的长度和间距
+					borderDash: [],
+					// 破折号的偏移量
+					borderDashOffset: 0.0,
+					// 设置折线交点的样式
+					borderJoinStyle: 'miter',
+					// 设置折线数据点的边框颜色
+					pointBorderColor: "rgba(175,192,192,1)",
+					// 设置折线数据点的背景颜色
+					pointBackgroundColor: "#fff",
+					// 设置折线数据点的边框宽度
+					pointBorderWidth: 1,
+					// 设置当鼠标悬停折线数据点时的半径
+					pointHoverRadius: 5,
+					// 设置当鼠标悬停折线数据点时的背景颜色
+					pointHoverBackgroundColor: "rgba(75,192,192,1)",
+					// 设置当鼠标悬停折线数据点时的边框颜色
+					pointHoverBorderColor: "rgba(220,220,220,1)",
+					// 设置当鼠标悬停折线数据点时的边框宽度
+					pointHoverBorderWidth: 2,
+					// 设置折线数据点的半径
+					pointRadius: 1,
+					//
+					pointHitRadius: 10,
+					// 设置折线中所有的数据
+					data: [28, 48, 40, 19, 86, 27, 90]
+				}
+			]
+		};
+
+		var data1 = {
+			datasets: [{
+				data: [28, 48, 40, 119, 86, 27, 90],
+				backgroundColor: [
+             '#00f',
+             '#0f0',
+             '#f00',
+             '#ff0',
+             '#0ff',
+             '#f0f',
+             '#d33',
+        ]
+			}],
+
+			// These labels appear in the legend and in the tooltips when hovering different arcs
+			labels: [
+				'Red',
+				'Yellow',
+				'Blue',
+				'Redq',
+				'Yellows',
+				'Blues',
+				'Blued'
+			]
+		};
+
+		var options = {
+			defaultFontColor: '#000',
+			hover: {
+
+				// Overrides the global setting
+				mode: 'label',
+
+			},
+			scales: {
+
+				yAxes: [{
+					ticks: {
+						beginAtZero: true
+					}
+				}]
+			},
+			title: {
+				display: true,
+				text: 'Custom Chart Title'
+			},
+			legend: {
+				display: true,
+				labels: {
+					fontColor: 'rgb(255, 99, 132)'
+				}
+			},
+			animation: {
+				duration: 1000
+			},
+			tooptips: {
+				enable: true,
+				backgroundColor: '#ff0'
+			}
+		};
+		var ctx = document.getElementById("myChart").getContext("2d");
+		var myChart = new Chart(ctx, {
+			type: 'bar',
+			data: data,
+			options: options
+		});
+		var ctx1 = document.getElementById("myChart1").getContext("2d");
+		var myChart = new Chart(ctx1, {
+			type: 'line',
+			data: data,
+			options: options
+		});
+		var ctx2 = document.getElementById("myChart2").getContext("2d");
+		var myChart = new Chart(ctx2, {
+			type: 'radar',
+			data: data
+		});
+		var ctx3 = document.getElementById("myChart3").getContext("2d");
+		var myChart = new Chart(ctx3, {
+			type: 'polarArea',
+			data: data1
+		});
+		var ctx4 = document.getElementById("myChart4").getContext("2d");
+		var myChart = new Chart(ctx4, {
+			type: 'pie',
+			data: data1
+		});
+		var ctx5 = document.getElementById("myChart5").getContext("2d");
+		var myChart = new Chart(ctx5, {
+			type: 'doughnut',
+			data: data1
+		});
+	</script>
+
+</html>
