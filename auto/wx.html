@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wx.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<audio controls="controls" id="audio_cot">
+			<source src="song.mp3" type="audio/mp3" />
+		</audio>
+		<script type="text/javascript">
+			
+	var $audio = $('#audio_cot')[0];
+	//$audio.play();	
+ 
+	wx.config({
+	    debug : false, // 这里为false
+	    appId : '', // 以下随意填写即可
+	    timestamp : (new Date()).getTime(),
+	    nonceStr : '',
+	    signature : '',
+	    jsApiList : ['checkJsApi'] 
+    });
+	wx.ready(function() {
+	    $audio.play();
+   });
+		</script>
+	</body>
+
+</html>

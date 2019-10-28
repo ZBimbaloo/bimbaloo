@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>audio</title>
+</head>
+<body>
+	<h1>音频自动播放</h1>
+	<!-- <audio id="audio"  src="http://storage.gzstv.net/uploads/media/sy/shouye.mp3" controls></audio> -->
+	<audio id="audio"  src="song.mp3" controls></audio>
+
+	<script>
+		window.onload = function(){
+			//https://wuxingzheng.github.io/audio.github.io/
+			var myaudio = document.getElementById('audio')
+			myaudio.play()
+			document.addEventListener("WeixinJSBridgeReady",function(){
+				myaudio.play()
+			})
+		}
+	</script>
+</body>
+</html>
